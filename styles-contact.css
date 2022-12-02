@@ -60,21 +60,21 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
-background-image: url("images/kids-toys-baby-bg-illustration.jpg");
+background-image: url("images/cherry-blossom-bg.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;	
 }
-
+  
 .center {
-    width: 40%; /*------This is for responsiveness------*/
-	min-width: 300px; /*------This is for responsiveness------*/
+    width: 50%; /*------This is for responsiveness------*/
+	min-width: 400px; /*------This is for responsiveness------*/
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(234, 164, 214, 0.80); /*this uses opacity of 75% for the background color*/
+ 	background: rgba(234, 164, 214, 0.80); /*this uses opacity of 80% for the background color*/
 	text-align: center;
-	border-radius: 50px 0px 50px 0px;
+	border-radius: 50px 50px 50px 50px;
 	/*border: 4px dashed white;*/
 
 	/* -------This is my fade in code-------*/
@@ -114,58 +114,95 @@ background-position: center;
 
 
 #logo {
-    margin-bottom: 16px;
+    margin-bottom: 5px;
 	/*border: 3px dashed red;*/
-	text-align: center;
+	text-align: center;	
+	width: max(30vw, 100px);
 }
 
 h1 {
 	font-family: 'Bebas Neue', cursive;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 2em;
-    margin: 0px auto 10px auto;
+	font-size: 3vw;
+    margin: 10px auto 10px auto;
     color: rgb(0, 0, 0);
 }
 
 h2 {
 	font-family: 'Bebas Neue', cursive;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.5em;
+	font-size: 2.2vw;
     line-height: 1.4;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 0px 0px;
-    margin: 0px auto 25px auto;
+    margin: 0px auto 10px auto;
 }
 
 p {
 	font-family: 'Bebas Neue', cursive;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.2em;
+	font-size: 1.8vw;
     line-height: 1.6;
     color: rgb(0, 0, 0);
 }
-nav{
+
+* {margin: 0; padding: 0;}
+
+nav {
 	font-family: 'Bebas Neue', cursive;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.2em;
-	width: 300px;
+	font-size: 2vw;
+	width: min-content;
 	margin: 0 auto;
 	/*border: dashed turquoise;
 	border-width: 3px 0;*/
 	text-align: center;
-	margin-top: 2em;
+	margin-top: 20px;
+	max-width: 100%;
+	min-width:fit-content;
+	/*-------This section creates responsiveness for the links and shrinks them when the browser is shrunk-------*/
+	height: 20px;
+	white-space: nowrap;
 }
 
-nav li{
-	display: inline;
+ul {
+  overflow: auto;
+  list-style-type: none;
 }
 
-nav a{
-	display: inline-block;
-	padding: 10px;
+li {
+  height: 25px;
+  display: inline-block;
+  margin-right: 0px;
+  border-right: 1px solid rgb(255, 255, 255);
+  padding: 0 20px;
 }
 
-a{
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  display: block;
+  padding: 0px;
+}
+
+
+li a:hover {
+  color: rgb(136, 96, 181);
+}
+
+li.active a {
+  font-weight: bold;
+  color: rgb(136, 96, 181);
+}
+
+
+
+/*a{
 	color: rgb(145, 115, 190);
 	text-decoration: none;
 	font-weight: bold;
@@ -174,6 +211,6 @@ a{
 a:hover{
 	color: black;
 	background: rgb(145, 115, 190);
-}
+}*/
     
 
