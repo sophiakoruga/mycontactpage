@@ -70,7 +70,7 @@ background-position: center;
 .center {
     width: 50%; /*------This is for responsiveness------*/
 	min-width: 400px; /*------This is for responsiveness------*/
-	padding: 2%;
+	padding: 5%;
     margin: 100px auto;
  	background: rgba(234, 164, 214, 0.80); /*this uses opacity of 80% for the background color*/
 	text-align: center;
@@ -114,10 +114,10 @@ background-position: center;
 
 
 #logo {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 	/*border: 3px dashed red;*/
 	text-align: center;	
-	width: max(30vw, 100px);
+	width: max(42vw, 100px);
 }
 
 h1 {
@@ -141,6 +141,7 @@ h2 {
 p {
 	font-family: 'Bebas Neue', cursive;
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
 	font-size: 1.8vw;
     line-height: 1.6;
     color: rgb(0, 0, 0);
@@ -184,13 +185,14 @@ li:last-child {
 
 li a {
   text-decoration: none;
+  font-weight: bold;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   display: block;
-  padding: 0px;
+  padding: 10px;
 }
 
-
+/*-------This affects hover color changes-------*/
 li a:hover {
   color: rgb(136, 96, 181);
 }
